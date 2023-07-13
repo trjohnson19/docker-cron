@@ -12,8 +12,8 @@ LABEL maintainer="aptalca"
 RUN \
   echo "**** install packages ****" && \
   apk add --no-cache \
-    logrotate \
-    jq
+    jq \
+    logrotate
 
 # add local files
 COPY root/ /
